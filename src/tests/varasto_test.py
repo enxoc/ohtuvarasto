@@ -50,6 +50,9 @@ class TestVarasto(unittest.TestCase):
 
         saatu_maara = self.varasto.ota_varastosta(2)
 
+        #Rikkinäinen testi
+        self.assertAlmostEqual(3, 1)
+
         self.assertAlmostEqual(saatu_maara, 2)
 
     def test_ottaminen_lisaa_tilaa(self):

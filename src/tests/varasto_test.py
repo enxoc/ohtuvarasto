@@ -75,4 +75,5 @@ class TestVarasto(unittest.TestCase):
     def test_saldo_palautus_merkkijonona_on_oikein(self):
         self.varasto.lisaa_varastoon(2.5)
 
+        # Voisi tarkistaa myös kokonaisluvuilla
         self.assertEqual(str(self.varasto), "saldo = 2.5, vielä tilaa 7.5")
